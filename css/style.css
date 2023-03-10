@@ -264,14 +264,16 @@ body{
     }
 
 }
-
-@media (max-width: 425px) {
+@media (max-width: 530px) {
     #container-menu ul{
         flex-direction: column;
     }
+}
+@media (max-width: 425px) {
     
     .container-header{
         justify-content: center;
+        flex-direction: column;
         flex-wrap: wrap;
         gap: 10px;
         padding: 10px 0;
