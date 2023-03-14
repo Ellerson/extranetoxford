@@ -203,16 +203,22 @@ body{
     max-width: 200px;
 }
 
-.card-inner img{
-    max-height: 200px;
+.card-inner div{
     border-radius: 5px;
+    overflow: hidden;
+    max-height: 200px;
+    max-width: 200px;
+}
+
+.card-inner img{
+    max-width: 200px;
     cursor: pointer;
     padding-bottom: 1px;
     transition: .4s;
 }
 
 .card-inner img:hover{
-    scale: 1.02;
+    scale: 1.05;
 }
 
 .download-container{
