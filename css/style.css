@@ -1,0 +1,297 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica';
+}
+
+body{
+    min-height: 100vh;
+    position: relative;
+    padding: 0 0 240px 0;
+    background: url(https://extranetoxford.com.br/wp-content/themes/oxford-extranet-kriaweb-v-2/images/oxford-rodape.jpg) center bottom no-repeat #ffffff;
+}
+
+/* TOP-HEADER */
+
+.top-header{
+    background-color: #ececec;
+    padding: 5px 0;
+}
+
+.top-header .top-content{
+    max-width: 1104px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 5px;
+}
+
+.top-content p{
+    color: #000;
+}
+
+.top-content a{
+    color: #000;
+    text-decoration: none;
+}
+
+.top-content a:hover{
+    text-decoration: underline;
+}
+
+/* HEADER */
+
+.header{
+    text-align: center;
+    background-color: #fff;
+}
+
+.container-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5px;
+    max-width: 1104px;
+    margin: auto;
+    align-items: center;
+}
+
+.src-button{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    box-shadow: 0px 3px 7px -2px rgb(0 0 0 / 50%);
+    border-radius: 5px;
+}
+
+.src-button input{
+    padding: 5% 10px;
+    border: none;
+    border-radius: 5px;
+    height: 100%;
+}
+
+.src-button button[type="submit"]{
+    background-color: #167CBA;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+}
+
+.src-button button[type="submit"]:hover{
+    background-color: #55ace2;
+    font-weight: bold;
+}
+
+.src-button button[type="submit"] img{
+    height: 12px;
+}
+
+#container-menu{
+    background-color: #fff;
+    box-shadow: 0px 6px 7px -2px rgb(0 0 0 / 10%);
+}
+
+#container-menu ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 10px;
+}
+
+#container-menu ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 5px 20px;
+    color: #333;
+    background-color: #fff;
+    margin: 10px 0;
+    transition: .3s;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#container-menu ul li a:hover{
+    background-color: #e4e4e4;
+}
+
+.titte-page{
+    text-align: center;
+    padding-top: 2rem;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.border{
+    width: 100px;
+    height: 5px;
+    background-color:#167CBA;
+    margin: 1rem auto;
+    border-radius: 10rem;
+}
+
+/* MAIN */
+
+.main{
+    display: flex;
+    justify-content: space-around;
+    max-width: 1000px;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+}
+
+/* SUBMENU */
+
+.submenus{
+    min-width: 200px;
+    text-align: center;
+}
+
+.submenu-btn{
+    display: block;
+    margin: 3px 0;
+    padding: 5px 0;
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+    transition: .3s;
+    border-radius: 5px;
+}
+
+.submenu-btn:hover{
+    background-color: #167CBA;
+    font-weight: bold;
+}
+
+/* CONTEUDO */
+
+.conteudo{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+.card{
+    text-align: center;
+    box-shadow: 0px 3px 7px -2px rgb(0 0 0 / 50%);
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-inner{
+    border-radius: 5px;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 5px;
+}
+
+.card-inner p{
+    padding: 4px 0;
+    max-width: 200px;
+}
+
+.card-inner div{
+    border-radius: 5px;
+    overflow: hidden;
+    max-height: 200px;
+    max-width: 200px;
+}
+
+.card-inner img{
+    max-width: 200px;
+    cursor: pointer;
+    padding-bottom: 1px;
+    transition: .4s;
+}
+
+.card-inner img:hover{
+    scale: 1.05;
+}
+
+.download-container{
+    display: flex;
+    gap: 5px;
+    bottom: 0;
+    position: relative;
+}
+
+.download-btn{
+    width: 50%;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 0;
+    background-color: #167CBA;
+    color: #fff;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.download-btn:hover{
+    background-color: #55ace2;
+    font-weight: bold;
+}
+
+/* FOOTER */
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    display: block;
+    background-color: #fff;
+    width: 100%;
+    height: 23px;
+    text-align: center;
+}
+
+@media (max-width: 720px){
+    .main{
+        flex-wrap: wrap;
+    }
+
+    .submenus{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    #container-menu ul li a{
+        padding: 10px 10px;
+    }
+
+}
+@media (max-width: 530px) {
+    #container-menu ul{
+        flex-direction: column;
+    }
+}
+@media (max-width: 425px) {
+    
+    .container-header{
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px 0;
+    }
+    #container-menu ul li a{
+        margin: 5px 0;
+    }
+    #container-menu ul {
+        gap: 0px;
+    }
+
+    #container-menu{
+        padding: 5px 0;
+    }
+}
